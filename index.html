@@ -21,14 +21,16 @@
     }
     header h1 {
       margin: 0;
+      font-size: 2.5rem;
     }
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
     }
     h2 {
       color: #2b50aa;
+      margin-top: 2rem;
     }
     .price {
       font-size: 1.5rem;
@@ -64,15 +66,34 @@
       background-color: #2b50aa;
       color: white;
     }
+    img, video {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAMP AG87_2025</h1>
+    <h1>Academy Generation 87 — Літній Camp 2025</h1>
     <p>Найкращі канікули для підлітків у Карпатах</p>
   </header>
 
   <section>
+    <h2>📸 Галерея</h2>
+    <div class="gallery">
+      <img src="https://drive.google.com/uc?export=view&id=1mVhQADWbPyQWS9boTtPY52V4i4FVDNnl" alt="Фото кемпу">
+      <img src="https://drive.google.com/uc?export=view&id=1vAK0sJPygFAP0IX2Etd8w6xYOA1kjoHp" alt="Активності">
+      <img src="https://drive.google.com/uc?export=view&id=1brpmzKiQaLP2uH0S-hKo5r4MX5kDznvY" alt="Діти на кемпі">
+      <video controls src="https://drive.google.com/uc?export=download&id=1Uub4XQMz-eRmyP-pYHqDboBdX3kUAPe0"></video>
+    </div>
+
     <h2>👦👧 Для кого?</h2>
     <p>Два заїзди: <strong>11–13 років (30.07–09.08)</strong> та <strong>14–18 років (10.08–20.08)</strong></p>
 
@@ -97,11 +118,16 @@
       <textarea name="comment" placeholder="Коментар (необов'язково)"></textarea>
       <button type="submit">Надіслати заявку</button>
     </form>
+
+    <h2>🏕 Хто ми?</h2>
+    <p><strong>Academy Generation 87</strong> — освітня ініціатива, створена у 2017 році для розвитку сучасного підлітка. 
+    Ми проводимо авторські курси: «Бізнес і Лідерство», «Ораторське мистецтво», «Фінансова грамотність», «Журналістика» та інші. 
+    З 2023 року організовуємо літні та зимові кемпи в Карпатах, де поєднуємо відпочинок з навчанням та формуванням свідомості нової генерації молоді.</p>
   </section>
 
   <footer>
     <p>© 2025 Academy Generation 87 | Пишіть нам: <a href="mailto:eugene17091995@gmail.com" style="color:white;">eugene17091995@gmail.com</a></p>
-    <p>Слідкуй за нами: <a href="https://www.instagram.com/academy.generation87/" style="color:white;">@academy.generation87</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/academy.generation87/" style="color:white;">@academy.generation87</a></p>
   </footer>
 </body>
 </html>
