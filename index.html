@@ -142,6 +142,41 @@
         cursor: pointer;
         text-decoration: none;
       }
+      form {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      form h3 {
+        text-align: center;
+        color: #6b4eff;
+        margin-bottom: 20px;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+      form button {
+        width: 100%;
+        padding: 14px;
+        background-color: #6b4eff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #5a3ed0;
+      }
     </style>
   </head>
   <body>
@@ -208,7 +243,26 @@
       <div class="overlay-text">Занурся в атмосферу кемпу!</div>
     </div>
 
-    <a class="cta-button" href="https://forms.gle/your-form-link">Зареєструватися</a>
+    <!-- Інтегрована форма -->
+    <section>
+      <h2>Зареєструватися на кемп</h2>
+      <form action="https://formspree.io/f/xwpljoqn" method="POST">
+        <h3>Заповніть форму для реєстрації</h3>
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="phone">Номер телефону:</label>
+        <input type="text" id="phone" name="phone" required />
+        
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Надіслати заявку</button>
+      </form>
+    </section>
 
     <footer>
       <div>Звʼязок: <a href="tel:+380936796278">+38 (093) 679 62 78</a></div>
