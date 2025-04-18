@@ -17,8 +17,27 @@
 
     <section class="about">
       <h2>Що на вас чекає</h2>
-      <p>Ми створюємо неймовірні можливості для вашої дитини!</p>
-      <!-- інші блоки -->
+      <div class="section-content">
+        <p>Ми створюємо неймовірні можливості для вашої дитини!</p>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <h2>Розклад табору</h2>
+      <ul>
+        <li>Лекції та майстер-класи</li>
+        <li>Активні ігри на природі</li>
+        <li>Майстерня творчості</li>
+      </ul>
+    </section>
+
+    <section class="photos">
+      <h2>Фотогалерея</h2>
+      <div class="gallery">
+        <img src="photo1.jpg" alt="Фото табору" />
+        <img src="photo2.jpg" alt="Фото табору" />
+        <img src="photo3.jpg" alt="Фото табору" />
+      </div>
     </section>
 
     <footer>
@@ -45,10 +64,42 @@ body {
   padding: 50px 0;
 }
 
-.about {
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.about,
+.schedule,
+.photos {
   padding: 30px;
   background-color: white;
   margin: 20px 0;
+}
+
+h2 {
+  color: #4a148c; /* темний фіолетовий */
+}
+
+.section-content {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
