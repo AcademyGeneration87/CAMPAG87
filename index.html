@@ -3,216 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Academy Generation 87 Camp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Rubik', sans-serif;
-        background-color: #f9f7ff;
-        color: #2d2d2d;
-        line-height: 1.6;
-      }
-      header {
-        background: linear-gradient(to right, #6b4eff 40%, rgba(255,255,255,0.1)), url("https://drive.google.com/uc?id=1uTFP3Gr_rABWK3WIadJ_Qy-Zb3GDC7-y") no-repeat center/cover;
-        color: white;
-        padding: 60px 20px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-      header .text {
-        flex: 1 1 300px;
-        padding: 20px;
-      }
-      header .text h1 {
-        font-size: 3rem;
-        margin: 0 0 10px;
-      }
-      header .text p {
-        font-size: 1.2rem;
-        margin: 0;
-      }
-      header img.logo {
-        max-width: 120px;
-        height: auto;
-        margin: 0 20px;
-      }
-      section {
-        padding: 50px 20px;
-        max-width: 1000px;
-        margin: auto;
-      }
-      section h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #6b4eff;
-      }
-      .features ul {
-        list-style: none;
-        padding: 0;
-      }
-      .features li {
-        background: #ede9fe;
-        border-left: 5px solid #6b4eff;
-        padding: 10px 15px;
-        margin-bottom: 10px;
-        border-radius: 8px;
-      }
-      .schedule-table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      .schedule-table th,
-      .schedule-table td {
-        padding: 12px;
-        border: 1px solid #ccc;
-        text-align: center;
-      }
-      footer {
-        background-color: #f3f0ff;
-        text-align: center;
-        padding: 20px;
-        font-size: 0.9rem;
-      }
-      footer .contact {
-        font-weight: bold;
-        margin-top: 10px;
-      }
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 15px;
-        margin-top: 30px;
-      }
-      .gallery-item {
-        position: relative;
-      }
-      .gallery-item img {
-        width: 100%;
-        border-radius: 10px;
-      }
-      .gallery-item .caption {
-        position: absolute;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        padding: 5px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-      .video-bg {
-        position: relative;
-        height: 60vh;
-        overflow: hidden;
-      }
-      .video-bg video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        filter: brightness(50%);
-      }
-      .video-bg .overlay-text {
-        position: relative;
-        color: white;
-        font-size: 2rem;
-        text-align: center;
-        padding-top: 100px;
-      }
-      .cta-button {
-        display: block;
-        width: fit-content;
-        margin: 30px auto;
-        padding: 12px 24px;
-        background-color: #6b4eff;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        cursor: pointer;
-        text-decoration: none;
-      }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Academy Generation 87</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div class="text">
-        <h1>Academy Generation 87 Camp</h1>
-        <p>Кемп для підлітків у серці Карпат</p>
+      <div class="hero">
+        <h1>Academy Generation 87</h1>
+        <p>Літній табір в Карпатах для активних і творчих дітей</p>
       </div>
-      <img class="logo" src="logo.png" alt="Логотип" />
     </header>
 
-    <section class="features">
-      <h2>Що на вас чекає!</h2>
-      <ul>
-        <li>Лекції з лідерства та бізнес-світогляду!</li>
-        <li>Ігри та практичні завдання для розвитку soft skills!</li>
-        <li>Активний відпочинок: спорт, басейн, настільний теніс!</li>
-        <li>Похід в гори та відвідування Парку Динозаврів!</li>
-        <li>Гала-вечеря по завершеню Camp-у!</li>
-        <li>3-х разове харчування!</li>
-      </ul>
+    <section class="about">
+      <h2>Що на вас чекає</h2>
+      <p>Ми створюємо неймовірні можливості для вашої дитини!</p>
+      <!-- інші блоки -->
     </section>
-
-    <section>
-      <h2>Розклад на день</h2>
-      <table class="schedule-table">
-        <tr><th>Час</th><th>Активність</th></tr>
-        <tr><td>08:00</td><td>Підйом і зарядка</td></tr>
-        <tr><td>09:00</td><td>Сніданок</td></tr>
-        <tr><td>10:00</td><td>Лекція або гра</td></tr>
-        <tr><td>13:00</td><td>Обід</td></tr>
-        <tr><td>14:00</td><td>Спорт або похід</td></tr>
-        <tr><td>18:00</td><td>Вечеря</td></tr>
-        <tr><td>20:00</td><td>Вечірня активність або кіно</td></tr>
-      </table>
-    </section>
-
-    <section>
-      <h2>Фотогалерея</h2>
-      <div class="gallery">
-        <div class="gallery-item">
-          <img src="https://drive.google.com/uc?id=1pZSCw9vV6zywOUyGH1BzCn8XRe89UWGb" alt="Хом'як">
-          <div class="caption">Кемп у горах</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://drive.google.com/uc?id=14W30HDGO1lGdYxQT9zzeQ9lEUHpKfWRu" alt="Нагородження">
-          <div class="caption">Нагородження</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://drive.google.com/uc?id=1rQExAPMitPDtSKW_a7mj2e8Ef5G-fh0R" alt="Водоспад">
-          <div class="caption">Гори</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://drive.google.com/uc?id=1lkyOuUWpcL3nY1oD6QtZeapZm4pzR3XL" alt="Учасники">
-          <div class="caption">Нові друзі</div>
-        </div>
-      </div>
-    </section>
-
-    <div class="video-bg">
-      <video autoplay muted loop>
-        <source src="video.mp4" type="video/mp4" />
-      </video>
-      <div class="overlay-text">Занурся в атмосферу кемпу!</div>
-    </div>
-
-    <a class="cta-button" href="https://forms.gle/your-form-link">Зареєструватися</a>
 
     <footer>
-      <div>Звʼязок: <a href="tel:+380936796278">+38 (093) 679 62 78</a></div>
-      <div>Instagram: <a href="https://www.instagram.com/academy.generation87/" target="_blank">academy.generation87</a></div>
+      <div class="footer-content">
+        <h3>Контакти</h3>
+        <p>Телефон: +380 123 456 789</p>
+        <a href="https://instagram.com/academy_generation87">Instagram</a>
+      </div>
     </footer>
   </body>
 </html>
+/* Основні стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.hero {
+  background-color: #6a1b9a; /* фіолетовий */
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about {
+  padding: 30px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #4a148c; /* темніший фіолетовий */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
