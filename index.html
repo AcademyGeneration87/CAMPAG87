@@ -2,114 +2,116 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Academy Generation 87</title>
+    <title>Academy Generation 87 - Camp</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div class="hero">
-        <h1>Academy Generation 87</h1>
-        <p>Літній табір в Карпатах для активних і творчих дітей</p>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#schedule">Розклад</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="about">
-      <h2>Що на вас чекає</h2>
-      <div class="section-content">
-        <p>Ми створюємо неймовірні можливості для вашої дитини!</p>
-      </div>
-    </section>
+    <main>
+      <section id="hero">
+        <h1>Літній табір Academy Generation 87</h1>
+        <p>Відпочинок, навчання, нові друзі!</p>
+      </section>
 
-    <section class="schedule">
-      <h2>Розклад табору</h2>
-      <ul>
-        <li>Лекції та майстер-класи</li>
-        <li>Активні ігри на природі</li>
-        <li>Майстерня творчості</li>
-      </ul>
-    </section>
+      <section id="about">
+        <h2>Про нас</h2>
+        <p>
+          Ми організовуємо захоплюючий літній табір для молоді, де ви знайдете
+          нові враження, дружну атмосферу та багато цікавих активностей.
+        </p>
+      </section>
 
-    <section class="photos">
-      <h2>Фотогалерея</h2>
-      <div class="gallery">
-        <img src="photo1.jpg" alt="Фото табору" />
-        <img src="photo2.jpg" alt="Фото табору" />
-        <img src="photo3.jpg" alt="Фото табору" />
-      </div>
-    </section>
+      <section id="schedule">
+        <h2>Розклад</h2>
+        <ul>
+          <li>День 1: Зустріч та знайомство</li>
+          <li>День 2: Навчальні семінари</li>
+          <li>День 3: Активні ігри та творчі завдання</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Контакти</h2>
+        <p>Телефон: +380123456789</p>
+        <p>Email: info@academy87.com</p>
+        <p>Instagram: @academy_generation87</p>
+      </section>
+    </main>
 
     <footer>
-      <div class="footer-content">
-        <h3>Контакти</h3>
-        <p>Телефон: +380 123 456 789</p>
-        <a href="https://instagram.com/academy_generation87">Instagram</a>
-      </div>
+      <p>&copy; 2025 Academy Generation 87</p>
     </footer>
   </body>
 </html>
-/* Основні стилі */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
 }
 
-.hero {
-  background-color: #6a1b9a; /* фіолетовий */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero {
+  background-color: #3498db;
   color: white;
   text-align: center;
   padding: 50px 0;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin: 0;
+#about,
+#schedule,
+#contact {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
 }
 
-.hero p {
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-.about,
-.schedule,
-.photos {
-  padding: 30px;
-  background-color: white;
-  margin: 20px 0;
-}
-
-h2 {
-  color: #4a148c; /* темний фіолетовий */
-}
-
-.section-content {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-.gallery {
-  display: flex;
-  justify-content: space-around;
-}
-
-.gallery img {
-  width: 30%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#about h2,
+#schedule h2,
+#contact h2 {
+  text-align: center;
 }
 
 footer {
-  background-color: #4a148c; /* темніший фіолетовий */
+  background-color: #2c3e50;
   color: white;
   text-align: center;
-  padding: 20px 0;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
+  padding: 10px 0;
+  margin-top: 20px;
 }
